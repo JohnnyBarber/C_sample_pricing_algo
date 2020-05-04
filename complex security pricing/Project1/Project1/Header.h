@@ -2,9 +2,12 @@
 #include <iostream>
 #include <math.h>
 #include <vector>
+#include <random>
+#include <chrono>
 #define M_PI 3.14159265358979323846
 using namespace std;
 
+//followings are self generated standard normal distribution
 int mod(int a, int b)
 {
 	int ret = a % b;
@@ -29,6 +32,7 @@ void Uniform(vector<float> &uniform,float start) {
 	}
 }
 
+//generate a standard normal distribution
 void Normal(vector<float> &norm, const vector<float> &unif1, const vector<float> &unif2)
 {
 	int n = norm.size();
@@ -40,7 +44,28 @@ void Normal(vector<float> &norm, const vector<float> &unif1, const vector<float>
 	}
 }
 
-void BM(float dt, const vector<float> &Z, vector<float> &W) {
+
+//to be more efficient and accurate, we use <random> to generate standard normal distribution
+vector<double> StdNormal(int n) {
+	vector<double> output;
+	//double mean = 0;
+	
+	unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+	default_random_engine generator(seed);
+	normal_distribution<double> distribution(0.0, 1.0);
+
+	for (int i = 0; i < n; i++) {
+		output.push_back(distribution(generator));
+		//mean += output[i];
+	}
+
+	//cout << "bm mean : " << mean / n << endl;
+
+	return output;
+}
+
+//generate brownian motion
+void BM(double dt, const vector<double> &Z, vector<double> &W) {
 	int n = Z.size();
 	for (int i = 0; i < n; i++) {
 		W[i] = sqrt(dt)*Z[i];

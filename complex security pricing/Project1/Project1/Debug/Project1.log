@@ -1,20 +1,15 @@
 ﻿  Source.cpp
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\header.h(38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(14): warning C4018: '<': signed/unsigned mismatch
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(21): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(22): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(23): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(24): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\stockpricepath.h(32): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\source.cpp(17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\source.cpp(17): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\source.cpp(19): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-c:\users\jiaqi li\desktop\c++ practice\self-practice\project1\project1\source.cpp(20): warning C4244: 'argument': conversion from 'float' to 'const unsigned int', possible loss of data
-  Project1.vcxproj -> C:\Users\Jiaqi Li\Desktop\C++ practice\self-practice\Project1\Debug\Project1.exe
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\header.h(53): warning C4244: 'initializing': conversion from 'std::chrono::system_clock::rep' to 'unsigned int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\stockpricepath.h(14): warning C4018: '<': signed/unsigned mismatch
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\stockpricepath.h(24): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\stockpricepath.h(25): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\stockpricepath.h(32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\source.cpp(19): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\users\jiaqi li\desktop\c++ practice\complex security pricing\project1\project1\source.cpp(20): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+  Project1.vcxproj -> C:\Users\Jiaqi Li\Desktop\C++ practice\complex security pricing\Project1\Debug\Project1.exe

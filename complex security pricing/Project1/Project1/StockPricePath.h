@@ -9,27 +9,30 @@
 
 using namespace std;
 
-void cumulativeSum(const vector<float>& input, vector<float>& result) {
+void cumulativeSum(const vector<double>& input, vector<double>& result) {
 	result.push_back(input[0]);
 	for (int i = 1; i < input.size(); i++) {
 		result.push_back(result[i - 1] + input[i]);
 	}
 }
 
-void StockPrice(float S0, float T, float sim, float steps, float sigma, float r, vector<float> &S)
+void StockPrice(double S0, double T, double sim, double steps, double sigma, double r, vector<double> &S)
 {
-	vector<float> unif1(steps), unif2(steps);
-	vector<float> norm(steps);
-	vector<float> bm(steps);
-	vector<float> dlnS(steps);
-	vector<float> lnS;
+	//comments can be used when we want to use our self-generated standard normal distribution
+	//vector<float> unif1(steps), unif2(steps);
+	//vector<float> norm(steps);
+	vector<double> bm(steps);
+	vector<double> dlnS(steps);
+	vector<double> lnS;
 
-	Uniform(unif1, rand() % 1000000 + 1);
-	Uniform(unif2, rand() % 1000000 + 1);
-	Normal(norm, unif1, unif2);
+	//Uniform(unif1, rand() % 1000000 + 1);
+	//Uniform(unif2, rand() % 1000000 + 1);
+	//Normal(norm, unif1, unif2);
 
-	float dt = T / steps;
-	float mu = r - 0.5*pow(sigma, 2.0);
+	vector<double> norm = StdNormal(steps);
+
+	double dt = T / steps;
+	double mu = r - 0.5*pow(sigma, 2.0);
 	BM(dt, norm, bm);
 
 	for (int i = 0; i < steps; i++) {
